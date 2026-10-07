@@ -4,5 +4,6 @@ class Solution(object):
             for j in range (i+1,len(nums)):
                 if (i+j)==target:
                     return i,j
+                    break
 
         
