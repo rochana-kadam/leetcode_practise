@@ -1,13 +1,9 @@
 class Solution(object):
-    def isPalindrome(self, x):
-        y=x
-        new=0
-        while x>0:
-           new= (new*10)+x%10
-           x=x/10
-        if new==y:
-            return True
-        else:
-            return False
+    def twoSum(self, nums, target):
+       for i in range (len(nums)):
+            for j in range (i+1,len(nums)):
+                if (nums[i]+nums[j])==target:
+                    return i,j
+                    break
 
         
