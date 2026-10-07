@@ -1,9 +1,46 @@
 class Solution(object):
-    def twoSum(self, nums, target):
-       for i in range (len(nums)):
-            for j in range (i+1,len(nums)):
-                if (nums[i]+nums[j])==target:
-                    return i,j
-                    break
-
+    def romanToInt(self, s):
+        val = 0
+        for i in range(len(s)):
         
+            if s[i] == 'I':
+                v1 = 1
+            elif s[i] == 'V':
+                v1 = 5
+            elif s[i] == 'X':
+                v1 = 10
+            elif s[i] == 'L':
+                v1 = 50
+            elif s[i] == 'C':
+                v1 = 100
+            elif s[i] == 'D':
+                v1 = 500
+            elif s[i] == 'M':
+                v1 = 1000
+
+            if i == len(s) - 1:
+                val += v1
+                break
+
+            if s[i + 1] == 'I':
+                v2 = 1
+            elif s[i + 1] == 'V':
+                v2 = 5
+            elif s[i + 1] == 'X':
+                v2 = 10
+            elif s[i + 1] == 'L':
+                v2 = 50
+            elif s[i + 1] == 'C':
+                v2 = 100
+            elif s[i + 1] == 'D':
+                v2 = 500
+            elif s[i + 1] == 'M':
+                v2 = 1000
+
+            if v1 < v2:
+                val -= v1
+            else:
+                val += v1
+
+        return val
+
