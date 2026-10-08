@@ -64,9 +64,9 @@ Example 3:
 
 ## Solution
 
-- **Language**: Python3
-- **Runtime**: 0 ms
-- **Memory**: 12.5 MB
+- **Language**: Python
+- **Runtime**: 15 ms
+- **Memory**: 12.3 MB
 
 ---
 
