@@ -4,6 +4,5 @@ class Solution(object):
         for i in range (len(small)):
             for j in range (len(strs)):
                 if strs[j][i]!=small[i]:
-                    print(small[:i])
-                    break
-            break
+                    return small[:i]
+                    
