@@ -1,4 +1,4 @@
-# [13. Roman to Integer](https://leetcode.com/problems/two-sum/)
+# [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/)
 
 **Difficulty**: 🟢 Easy  
 **Tags**: Hash Table, Math, String
@@ -64,8 +64,8 @@ Example 3:
 
 ## Solution
 
-- **Language**: Python
-- **Runtime**: 16 ms
+- **Language**: Python3
+- **Runtime**: 3 ms
 - **Memory**: 12.4 MB
 
 ---
